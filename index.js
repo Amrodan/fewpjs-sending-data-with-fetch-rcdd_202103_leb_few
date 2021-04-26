@@ -1,8 +1,8 @@
 // Add your code here
-function submitData("Name","email") {
+function submitData("name","email") {
 
   const formData = {
-    Name: "Amro",
+    name: "Amro",
     email: "amrdandashli@gmail.com"
   };
 
@@ -15,7 +15,7 @@ function submitData("Name","email") {
     body: JSON.stringify(formData)
   };
 
-returns  fetch("http://localhost:3000/users", configObj)
+return  fetch("http://localhost:3000/users", configObj)
     .then(function(response) {
       return response.json();
     })
